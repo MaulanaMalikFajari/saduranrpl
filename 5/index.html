@@ -28,6 +28,8 @@ Singkatnya include adalah disertakan dan Extend adalah Pengembangan
 2. Arah panah include mengarah pada usecase yang dibutuhkan.
 3. 1 usecase adalah bagian dari usecase lainnya.
   Contoh: untuk manajemen data suku cadang seperti pelayan toko/admin yang login ke sistem
+♦Usecase Login Merupakan syarat/selalu dipanggil terlebih dahulu sebelum dijalankannya usecase Mengelola Anggota atau usecase Mengelola Peminjaman.
+<img src="login.png">
 
 -Extend:
 1. Suatu usecase yang dapat berdiri sendiri meski tanpa usecase yang lain.
@@ -35,7 +37,12 @@ Singkatnya include adalah disertakan dan Extend adalah Pengembangan
   Contoh: Setelah melihat suku cadang, konsymen dapat memilih suku cadang, lalu konsumenpun dapat melihat keranjang belanja setelah memilih suku cadang(hasil extend memilih suku cadang)
 <img src="2.png">
 
--Usecase Validasi User merupukan usecase yang ditambahkan/dikembangkan(usecase induk), dimana usecase ini dapat berdiri tanpa usecase tambahan (Validasi Sidik Jari).
+♦Usecase Validasi User merupukan usecase yang ditambahkan/dikembangkan(usecase induk), dimana usecase ini dapat berdiri tanpa usecase tambahan (Validasi Sidik Jari).
 Contoh: Setelah pengguna melakukan validasi user, pengguna dapat mengembangkannya dengan validasi sidik jari atau tidak.
 <img src="validasi.png">
+
+♦Usecase Buka Rekening merupakan usecase yang ditambahkan/dikembangkan (Usecase Induk) Sehingga dapat berdiri sendiri usecase ini merupakan tambahan yang berasal dari pengembangan extend dari usecase Buka rekening.
+Contoh: Pengguna melakukan pengembangan dengan Buka Deposito atau Buat Kartu Kredit.
+<img src="rekening.png">
+
 
