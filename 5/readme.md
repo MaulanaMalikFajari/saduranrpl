@@ -1,0 +1,5 @@
+NIM: 1811500085
+
+NAMA: Maulana Malik Fajari
+
+KELOMPOK: TI6A
