@@ -20,3 +20,18 @@ Beberapa relasi pada usecase diagram:<br>
 Usecase Diagram:
 Umumnya gambar sebelah kiri pada usecase diagram disebut dengan Aktor Aktif dan Jika disebelah kanan maka disebut Aktor Pasif
 <img src="usecasediagram.png">
+
+Apa itu Include dan Extend?
+Singkatnya include adalah disertakan dan Extend adalah Pengembangan
+-Include:
+1. Suatu usecase lain membutuhkan usecase ini untuk syarat dapat dijalankan.
+2. Arah panah include mengarah pada usecase yang dibutuhkan.
+3. 1 usecase adalah bagian dari usecase lainnya.
+  Contoh: untuk manajemen data suku cadang seperti pelayan toko/admin yang login ke sistem
+
+-Extend:
+1. Suatu usecase yang dapat berdiri sendiri meski tanpa usecase yang lain.
+2. Arah panah exclude mengarah pada usecase yang menjadi induk.
+  Contoh: Setelah melihat suku cadang, konsymen dapat memilih suku cadang, lalu konsumenpun dapat melihat keranjang belanja setelah memilih suku cadang(hasil extend memilih suku cadang)
+<img src="2.png">
+
