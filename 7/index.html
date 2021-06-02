@@ -1,28 +1,43 @@
 NIM: 1811500085<br>
 NAMA: Maulana Malik Fajari<br>
 KELOMPOK: TI6A<br>
-Konsep pada Class Diagram adalah menggambarkan hubungan antar class atau hubungan antar tabel (struktur tabel)
--Class Diagram terdiri dari: Nama class, attribut, method
--Nama class atau nama tabel
--Attribut diisi dengan field yang menjadi key, nama field, tipe data,
- lebar/panjang data.
 
-  Method diisi dengan operasi apa saja yang dilakukan pada
-class/tabel, misal: select/baca, insert/tambah/simpan,
-update/ubah, delete/hapus, count/hitung jumlah,
-auto_numbering/nomor otomatis/kode otomatis, dst.
+-Diagram Sequence
 
-  Class Diagram representasi lain dari Entity Relationship Diagram
-(ERD) dan Logical Record Structure (LRS), tetapi lebih lengkap
-karena memuat struktur tabel dan operasi terhadap basisdata
-(query) terhadap tabel tersebut.
+   Diagram sequence merupakan salah satu yang menjelaskan bagaimana suatu operasi itu dilakukan; message (pesan) apa yang dikirim dan kapan pelaksanaannya.<br>
+Diagram ini diatur berdasarkan waktu. Objek-objek yang berkaitan dengan proses berjalannya operasi diurutkan dari kiri ke kanan berdasarkan waktu terjadinya<br>
+dalam pesan yang terurut.<br>
+<br>
+   Diagram sequence menampilkan interaksi antar objek dalam dua dimensi. Dimensi vertikal adalah poros waktu, dimana waktu berjalan ke arah bawah.<br>
+Sedangkan dimei horizontal merepresentasikan objek-objek individual. Tiap objek (termasuk actor) tersebut mempunyai waktu aktif yang direpresentasikan dengan <br>
+kolom vertikal yang disebut dengan lifeline. Pesan (message) direpresentasikan sebagai panah dari satu lifeline ke lifeline yang lain. Message digambarkan sebagai<br>
+garis berpanah dari satu objek ke objek lainnya. Pada fase desain berikutnya, messagnse akan dipetakan menjadi operasi/metoda dari class.<br>
+<br>
+   Diagram sequence ini biasa digunakan untuk menggambarkan skenario atau rangkaian langkah – langkah yang dilakukan sebagai respon dari sebuah event untuk menghasilkan <br>
+ouput tertentu, dan perubahan apa saja yang terjadi secara internal dan ouput apa yang dihasilkan.<br>
+Diagram sequence mendeskripsikan bagaimana entitas dalam sistem berinteraksi, termasuk pesan yang digunakan saat interaksi. Semua pesan dideskripsikan dalam <br>
+urutan dari eksekusi. Diagram sequence berhubungan erat dengan diagram use case , dimana 1 use case akan menjadi 1 diagram sequence.<br>
+Diagram sequence memiliki elemen-elemen sebagai berikut:<br>
+-Actor yaitu orang atau sistem eksternal lainnya yang menerima manfaat atau menggunakan sistem.<br>
+-Object yaitu objek yang terlibat dalam sistem.<br>
+-Lifeline yaitu sebuah garis yang menggambarkan masa hidup dari sebuah objek dalam sequence diagram.<br>
+ Execution occurrence yaitu sebuah persegi panjang yang menggambarkan waktu terjadinya pengiriman/penerimaan pesan.<br>
+-Message yaitu informasi yang mengalir dari satu objek ke objek lainnya.<br>
+-Guard condition yaitu suatu persyaratan yang harus terpenuhi agar suatu pesan dapat dikirimkan.<br>
+-Object destruction menggambarkan akhir dari sebuah lifeline object.<br>
+-Frame menyatakan konteks dari diagram sequence.<br>
 
-  Stereotype => menentukan/menandakan attribute yang menjadi pk = primary key maupun fk
-= foreign key
--Multiplicity => menentukan tingkat hubungan/kardinalitas antar class melalui association
-(garis hubungan antar class)
-- 1 => hanya 1 dan pasti hanya 1
-- 0..1 => dapat tidak ada (kosong) sampai dengan 1
-- 0..* => dapat tidak ada (kosong) sampai dengan tak terhingga (banyak)
-- * => dapat banyak (tak terhingga)
-- 1..* => sedikitnya 1, bisa lebih dari 1
+   Persamaan diagram sequence dan diagram  collaboration/communication:
+Menampilkan objek yang berpartisipasi dalam aliran melalui use case dan pesan yang dikirim antar objek.
+Perbedaan diagram sequence dan diagram collaboration/communication:
+diagram sequence
+Disusun berdasarkan urutan waktu.
+Berguna jika seseorang ingin mereview aliran logic melalui skenario.
+Menyediakan cara untuk melihat skenario dalam urutan berbasis waktu : apa yang terjadi pertama, apa yang terjadi berikutnya, dll. Digunakan untuk menentukan message ordering
+diagram  collaboration/communication
+Diatur sekitar objek itu sendiri.
+Berguna jika kita ingin menilai dampak perubahan. Sangat mudah untuk melihat pada diagram collaboration/communication, objek yang berkomunikasi dengan objek yang lain.
+Jika kita ingin mengubah objek, kita dapat dengan mudah melihat objek-objek lain yang mungkin akan terpengaruh.
+Memberikan gambaran besar untuk skenario, karena mereka diorganisir sekitar bagaimana objek me-link ke satu dan yang lainnya. Digunakan untuk menentukan class relationships
+Contoh Diagram Sequence:
+
