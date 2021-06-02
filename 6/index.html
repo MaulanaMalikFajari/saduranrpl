@@ -10,3 +10,29 @@ Atribut : Diisi dengan field yang menjadi key, nama field, tipe data dan lebar/p
 Method : Diisi dengan operasi apa saja yang dilakukan pada class/tabel, seperti : Select/baca, insert/tambah/simpan, update/ubah, delete/hapus, <br>
 count/hitung jumlah, auto_numbering/nomor otomatis/kode otomatis, dan sebagainya.<br>
 3. Class Diagram merupakan representasi atau gabungan lain dari ERD dan LRS<br>
+
+Konsep pada Class Diagram adalah menggambarkan hubungan antar class atau hubungan antar tabel (struktur tabel)
+-Class Diagram terdiri dari: Nama class, attribut, method
+-Nama class atau nama tabel
+-Attribut diisi dengan field yang menjadi key, nama field, tipe data,
+ lebar/panjang data.
+
+  Method diisi dengan operasi apa saja yang dilakukan pada
+class/tabel, misal: select/baca, insert/tambah/simpan,
+update/ubah, delete/hapus, count/hitung jumlah,
+auto_numbering/nomor otomatis/kode otomatis, dst.
+
+  Class Diagram representasi lain dari Entity Relationship Diagram
+(ERD) dan Logical Record Structure (LRS), tetapi lebih lengkap
+karena memuat struktur tabel dan operasi terhadap basisdata
+(query) terhadap tabel tersebut.
+
+  Stereotype => menentukan/menandakan attribute yang menjadi pk = primary key maupun fk
+= foreign key
+-Multiplicity => menentukan tingkat hubungan/kardinalitas antar class melalui association
+(garis hubungan antar class)
+- 1 => hanya 1 dan pasti hanya 1
+- 0..1 => dapat tidak ada (kosong) sampai dengan 1
+- 0..* => dapat tidak ada (kosong) sampai dengan tak terhingga (banyak)
+- * => dapat banyak (tak terhingga)
+- 1..* => sedikitnya 1, bisa lebih dari 1
