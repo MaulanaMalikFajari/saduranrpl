@@ -4,16 +4,16 @@ KELOMPOK: TI6A<br>
 <br>
 -Diagram Sequence<br>
 <br>
-   Diagram sequence merupakan salah satu yang menjelaskan bagaimana suatu operasi itu dilakukan; message (pesan) apa yang dikirim dan kapan pelaksanaannya.<br>
+   Diagram sequence merupakan salah satu yang menjelaskan bagaimana suatu operasi yang dikirim dan kapan pelaksanaannya.<br>
 Diagram ini diatur berdasarkan waktu. Objek-objek yang berkaitan dengan proses berjalannya operasi diurutkan dari kiri ke kanan berdasarkan waktu terjadinya<br>
 dalam pesan yang terurut.<br>
 <br>
    Diagram sequence menampilkan interaksi antar objek dalam dua dimensi. Dimensi vertikal adalah poros waktu, dimana waktu berjalan ke arah bawah.<br>
-Sedangkan dimei horizontal merepresentasikan objek-objek individual. Tiap objek (termasuk actor) tersebut mempunyai waktu aktif yang direpresentasikan dengan <br>
+Sedangkan horizontal merepresentasikan objek-objek individual. Tiap objek tersebut mempunyai waktu aktif yang direpresentasikan dengan <br>
 kolom vertikal yang disebut dengan lifeline. Pesan (message) direpresentasikan sebagai panah dari satu lifeline ke lifeline yang lain. Message digambarkan sebagai<br>
-garis berpanah dari satu objek ke objek lainnya. Pada fase desain berikutnya, messagnse akan dipetakan menjadi operasi/metoda dari class.<br>
+garis berpanah dari satu objek ke objek lainnya. Pada fase desain berikutnya,pesan akan diarahkan menjadi operasi/metoda dari class.<br>
 <br>
-   Diagram sequence ini biasa digunakan untuk menggambarkan skenario atau rangkaian langkah – langkah yang dilakukan sebagai respon dari sebuah event untuk menghasilkan <br>
+   Diagram sequence ini biasa digunakan untuk menggambarkan skenario atau rangkaian langkah – langkah yang dilakukan sebagai respond dari sebuah event untuk menghasilkan <br>
 ouput tertentu, dan perubahan apa saja yang terjadi secara internal dan ouput apa yang dihasilkan.<br>
 Diagram sequence mendeskripsikan bagaimana entitas dalam sistem berinteraksi, termasuk pesan yang digunakan saat interaksi. Semua pesan dideskripsikan dalam <br>
 urutan dari eksekusi. Diagram sequence berhubungan erat dengan diagram use case , dimana 1 use case akan menjadi 1 diagram sequence.<br>
@@ -31,7 +31,7 @@ Contoh Diagram Sequence:<br>
 <img src="sequence_diagram.png"><br>
 <br>
 Pada contoh diagram sequence di atas terdapat 1 administrator dan 3 objek, yaitu: Layar login, cek user, data user, menu utama.<br>
-Pertama-tama administrator akan masuk ke layar login dengan menggunakan User ID dan Password().<br>
-Dari Layar login, admin akan melakukan cek user dengan memasukkan User ID dan Password().<br>
+Pertama-tama administrator akan masuk ke layar login dengan menggunakan User ID dan Password.<br>
+Dari Layar login, admin akan melakukan cek user dengan memasukkan User ID dan Password.<br>
 Setelah melakukan cek user, admin akan memasukkan user ID dan password sekali lagi untuk melihat data user.<br>
-User ID dan Password yang dimasukkan admin sebanyak 3 kali, digunakan untuk melakukan validasi. Validasi ini bertujuan untuk membuka menu utama().<br>
+User ID dan Password yang dimasukkan admin sebanyak 3 kali, digunakan untuk melakukan validasi. Validasi ini bertujuan untuk membuka menu utama.<br>
